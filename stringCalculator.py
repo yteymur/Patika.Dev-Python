@@ -3,7 +3,7 @@ def StringCalculate(strParam):
   operators="+*/("
   for i in range(1,len(stringlist)):
     if stringlist[i] == "(" and stringlist[i-1] not in operators:
-      stringlist.index(i,"*")
+      stringlist.insert(i,"*")
   strParam="".join(stringlist)
   return int(eval(strParam))
 
